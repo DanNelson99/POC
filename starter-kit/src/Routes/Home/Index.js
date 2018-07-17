@@ -1,9 +1,23 @@
-import React from 'react'
+import React from 'react';
+import './Home.scss'
 
-const Home = () => (
-  <div>
-    <h1>Welcome to the Tornadoes Website!</h1>
-  </div>
-)
+class Home extends React.Component {
+ 
+  constructor(props, context) {
+    super(props, context);
+
+  }
+
+render() {
+  
+  console.log("Home", this.props.container.containers);
+
+     return (
+      <div>
+           <h1>Welcome to the Tornadoes Website!</h1>
+      </div>
+    );
+  }
+}
 
 export default Home

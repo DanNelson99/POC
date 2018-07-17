@@ -55,5 +55,5 @@ module.exports = {
         }
       ]
     },
-    plugins: [htmlPlugin,miniCssExtractPlugin]
+    plugins: [htmlPlugin,miniCssExtractPlugin],
   };
