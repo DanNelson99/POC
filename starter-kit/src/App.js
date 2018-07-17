@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "./App.scss";
+import './App.scss';
+import './styles.css';
 import Header from './components/header/index'
 import Home from './routes/home'
 import { connect } from 'react-redux';
