@@ -7,6 +7,12 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -20,7 +26,15 @@
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.2",
+    "pixrem": "^4.0.1",
+    "pleeease-filters": "^4.0.0",
+    "postcss-calc": "^6.0.1",
+    "postcss-color-function": "^4.0.1",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-flexbugs-fixes": "^3.3.1",
     "postcss-loader": "^2.1.6",
+    "postcss-nested": "^3.0.0",
+    "postcss-nesting": "^6.0.0",
     "redux-devtools-extension": "^2.13.5",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",

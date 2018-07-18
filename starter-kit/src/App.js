@@ -48,6 +48,7 @@ class App extends Component{
           <div className="App">
           <Header/>
           <Home container={this.props.container}/>
+          <button className="btn btn-primary">Boot Strap primary button</button>
           </div>
       );
     }
