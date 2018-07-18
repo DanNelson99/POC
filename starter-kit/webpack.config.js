@@ -37,10 +37,10 @@ module.exports = {
             loader: "babel-loader"
           }
         },
-        // {
-        //     test: /\.css$/,
-        //     use: ["style-loader", "css-loader"]
-        // },
+        {
+          test: /\.(png|jpg|svg|pdf|gif)$/,
+          loader: 'url-loader'
+        },
         {
           test: /\.css$/,
           use: ExtractTextPlugin.extract(
