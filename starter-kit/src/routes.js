@@ -6,10 +6,10 @@ import About from './routes/about/index';
 export default () => {
   return (
     <BrowserRouter>
-    <Switch>
-    <Route exact path='/' component={App}/>
-    <Route path='/About' component={About}/>
-    </Switch>
+      <Switch>
+        <Route exact path='/' component={App}/>
+        <Route path='/About' component={About}/>
+        </Switch>
     </BrowserRouter>
   )
  }
