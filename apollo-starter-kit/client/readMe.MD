@@ -1,12 +1,10 @@
-This package contains a react client starter kit. This can now be used with services to connect to a backend.
-
-A backend starter kit is in the works.
+This package contains a Apollo react client starter kit. This can now be used with services to connect to a backend.
 
 -Download and install node and git
 -Clone repo
--Cd to root and run npm install
+-cd to client root and run npm install
 
-Commands 
+Commands (client folder)
 npm run start - starts dev server and build and opens current web browser.
 npm run build - creates files in dist folder for production build.(bundle.js).
 npm run test - runs created tests.
@@ -22,3 +20,4 @@ Web Pack is the build tool and has all configuriation done for dev. Still needs 
 8) Bootstrap css has been added
 9) Flex-box grid system is configuired.
 10) Images are configured in web pack.
+11) Apollo client to use with graphql (start backend server)

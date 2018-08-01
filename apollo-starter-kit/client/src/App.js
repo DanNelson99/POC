@@ -5,6 +5,8 @@ import Header from './components/header/index'
 import Home from './routes/home'
 import { connect } from 'react-redux';
 import { setConatainerData } from './actions/container';
+import gql from 'graphql-tag';
+import { graphql, compose } from 'react-apollo';
 
 class App extends Component{
 
@@ -13,6 +15,7 @@ class App extends Component{
   }
 
     componentDidMount(){
+      //this  is where you would put a service call and save too redux store
       this.loadContainers();
     }
 
@@ -40,10 +43,13 @@ class App extends Component{
           submissionDdate: 1525096588,
         }]
       };
+      //redux store containers
      this.props.dispatch(setConatainerData(containers));
     };
 
     render(){
+      // Data from qraphql
+     console.log("Data from qraphql",this.props.data);
       return(
           <div className="App">
           <Header/>
@@ -54,4 +60,15 @@ class App extends Component{
     }
 }
 
-export default connect(state => state)(App);
+// define query in a constant
+const allUsersQuery = gql`
+  query {
+    author(firstName: "Edmond", lastName: "Jones"){
+      firstName
+      lastName
+    }
+    getFortuneCookie
+  }
+`;
+
+export default compose(graphql(allUsersQuery),connect(state => state))(App);

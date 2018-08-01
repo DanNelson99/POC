@@ -3,12 +3,17 @@ import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import bodyParser from 'body-parser';
 import compression from 'compression';
 import schema from './data/schema';
+import cors from 'cors';
+
 
 const GRAPHQL_PORT = 3000;
 
 const graphQLServer = express();
 
 graphQLServer.use(compression());
+
+graphQLServer.use(cors())
+
 graphQLServer.use(
   '/graphql',
   bodyParser.json(),
